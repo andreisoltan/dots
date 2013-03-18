@@ -31,4 +31,8 @@ syntax on
 set autoindent
 set smartindent
 set tabstop=4
+set cc=80
+
+colorscheme delek
+
 
