@@ -31,7 +31,12 @@ syntax on
 set autoindent
 set smartindent
 set tabstop=4
-set cc=80
+
+if exists('+colorcolumn')
+	 set colorcolumn=80
+else
+	au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+endif
 
 colorscheme delek
 
