@@ -26,6 +26,7 @@ set number
 set backspace=2
 set showmatch
 syntax on
+colorscheme delek
 
 " Indentation and Spacing
 set autoindent
@@ -38,6 +39,5 @@ else
 	au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
 
-colorscheme delek
 
 
